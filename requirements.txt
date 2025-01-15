@@ -1,4 +1,6 @@
 aiosqlite==0.20.0
+argon2-cffi==23.1.0
+argon2-cffi-bindings==21.2.0
 cffi==1.17.1
 cryptography==44.0.0
 iso8601==2.1.0
@@ -8,8 +10,10 @@ mdit-py-plugins==0.4.2
 mdurl==0.1.2
 platformdirs==4.3.6
 pycparser==2.22
+pycryptodomex==3.21.0
 Pygments==2.19.1
 pypika-tortoise==0.3.2
+pyseto==1.8.2
 pytz==2024.2
 redis==5.2.1
 rich==13.9.4
