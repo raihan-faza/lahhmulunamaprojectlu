@@ -1,10 +1,18 @@
+from enum import Enum
+
 from tortoise import fields
 from tortoise.models import Model
+
+
+class StatusEnum(Enum):
+    active = "active"
+    inactive = "inactive"
 
 
 class Chat(Model):
     id = fields.UUIDField(primary_key=True)
     users = fields.ManyToManyField("models.User", related_name="users")
+    status = fields.CharEnumField(enum_type=StatusEnum, default=StatusEnum.active)
 
 
 class Messages(Model):
