@@ -2,7 +2,7 @@ import time
 
 import pyseto
 
-from utils.utils import private_key, public_key
+from utils.paseto import private_key, public_key
 
 
 def generate_paseto_token(user_id):
