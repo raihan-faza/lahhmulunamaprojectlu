@@ -4,8 +4,8 @@ import json
 from websockets.asyncio.server import serve
 from websockets.exceptions import ConnectionClosedOK
 
-from models.chat import Chat
-from utils.env import port
+from app.models.chat import Chat
+from app.utils.env import port
 
 active_chats = {}
 
